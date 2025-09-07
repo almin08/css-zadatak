@@ -14,23 +14,28 @@
       color: red;
     }
 
-   #second-div p:nth-of-type(odd) { color: red; }
-#second-div p:nth-of-type(even) { color: blue; }
-
+    /* 3. Paragrafe unutar second-div naizmenično obojiti */
+    #second-div p:nth-of-type(odd) { 
+      color: red; 
+    }
+    #second-div p:nth-of-type(even) { 
+      color: blue; 
+    }
 
     /* 4. Dodaj NEW na paragrafe 2 i 3 */
     p:nth-of-type(2)::after {
       content: " NEW";
       color: yellow;
     }
-
     p:nth-of-type(3)::after {
       content: " NEW";
       color: yellow;
-  #second-div p:nth-of-type(7):hover {
-  font-style: italic;
-}
+    }
 
+    /* 5. Hover na Paragraph 10 */
+    #second-div p:nth-of-type(7):hover {
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -61,3 +66,4 @@
   </div>
 </body>
 </html>
+
